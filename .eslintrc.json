@@ -1,0 +1,96 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:jest/recommended",
+        "plugin:jest/style"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "jest"
+    ],
+    "rules": {
+        "jsx-a11y/label-has-associated-control": ["off"],
+        "react/no-unescaped-entities": ["off"],
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error",
+        "semi": ["error", "always"],
+        "no-console": ["error", { "allow": ["warn", "error", "trace"] }],
+        "react/jsx-props-no-spreading": "off",
+        "radix": ["error", "as-needed"],
+        "max-len": ["error", {
+            "code": 164,
+            "tabWidth": 2,
+            "ignoreUrls": true,
+            "ignoreComments": false,
+            "ignoreTrailingComments": true,
+            "ignoreRegExpLiterals": true,
+            "ignoreStrings": true,
+            "ignoreTemplateLiterals": true
+        }],
+        "arrow-parens": ["error", "always"],
+        "no-restricted-syntax": ["off"],
+        "comma-dangle": ["error", {
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "imports": "always-multiline",
+            "exports": "always-multiline",
+            "functions": "ignore"
+        }],
+        "prefer-destructuring": ["error", {
+            "VariableDeclarator": {
+                "array": false,
+                "object": true
+            },
+            "AssignmentExpression": {
+                "array": true,
+                "object": false
+            }
+        }, {
+            "enforceForRenamedProperties": false
+        }],
+        "consistent-return": ["off"],
+
+        "func-names": ["off"],
+        "no-shadow": ["off"],
+        "no-nested-ternary": ["off"],
+        "no-underscore-dangle": ["off"],
+        "no-new": ["off"],
+        "no-use-before-define": ["off"],
+        "no-loop-func": ["off"],
+        "no-unused-expressions": ["error", { "allowTernary": true }],
+        "no-mixed-operators": ["off"],
+        "array-callback-return": ["off"],
+        "import/first": ["off"],
+        "import/no-unresolved": ["off"],
+        "import/no-extraneous-dependencies": ["off"],
+        "import/extensions": ["off"],
+        "import/prefer-default-export": ["warn"],
+
+        "react/prop-types": ["off"],
+        "react/no-multi-comp": ["warn"],
+        "react/jsx-no-bind": ["off"],
+        "react/prefer-stateless-function": ["off"],
+        "react/forbid-prop-types": ["off"],
+        "react/jsx-filename-extension": ["off"],
+
+        "jsx-a11y/click-events-have-key-events": ["off"],
+        "jsx-a11y/no-static-element-interactions": ["off"],
+        "jsx-a11y/href-no-hash": "off",
+        "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }]
+    }
+}
