@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Root from "@containers/Root";
 
-const App = () => {
-    return (
-        <h1>Hello World</h1>
-    )
-}
-
-export default App;
+import { ThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import {theme} from "@styles/theme";
 
 ReactDOM.render(
-    <App />,
+    <ThemeProvider theme={theme}>
+        <CssBaseline />
+    <Root />
+    </ThemeProvider>,
     document.getElementById('app-root')
 );

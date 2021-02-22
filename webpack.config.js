@@ -13,7 +13,7 @@ if (process.env.NODE_ENV !== 'none') {
 }
 
 const appData = {
-    name: 'MetisCyber',
+    name: 'GoDaddy Record Editor',
     version: greVersion
 };
 // eslint-disable-next-line no-console
